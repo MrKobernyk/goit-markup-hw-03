@@ -41,6 +41,11 @@ body {
   padding: 0 15px;
 }
 
+.employees-list img,
+.what-we-do-list img {
+  display: block;
+}
+
 /* ----------------------Logo---------------------- */
 
 .logo-web {
