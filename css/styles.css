@@ -41,16 +41,7 @@ body {
   padding: 0 15px;
 }
 
-/* FLEXBOXES */
-
-.what-we-do-list,
-.employees-list,
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Logo */
+/* ----------------------Logo---------------------- */
 
 .logo-web {
   margin-right: 93px;
@@ -71,7 +62,7 @@ body {
   color: #ffffff;
 }
 
-/* Header */
+/* ----------------------Header---------------------- */
 
 .header {
   padding-top: 24px;
@@ -151,7 +142,7 @@ nav {
   color: var(--primary-text-color);
 }
 
-/* Footer */
+/* ----------------------Footer---------------------- */
 
 .footer {
   padding-top: 60px;
@@ -159,11 +150,12 @@ nav {
 
   background-color: #2f303a;
   font-size: 14px;
-  line-height: 2.1;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .logo-footer {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -172,6 +164,15 @@ nav {
   color: var(--active-text-color);
   text-decoration: none;
   font-style: normal;
+}
+
+.adress-street,
+.adress-contact {
+  display: block;
+}
+
+.adress-contact {
+  margin-top: 9px;
 }
 
 .adress .adress-street:hover,
@@ -186,7 +187,20 @@ nav {
   text-decoration: none;
 }
 
-/* --INDEX-- */
+
+/* ----------------------INDEX---------------------- */
+
+.advantages-list,
+.what-we-do-list,
+.employees-list {
+  display: flex;
+}
+
+.advantages-list > li:not(:last-child),
+.what-we-do-list > li:not(:last-child),
+.employees-list > li:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Hero */
 
@@ -245,6 +259,11 @@ nav {
   text-transform: uppercase;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages-list > li {
   width: calc((100% - 90px) / 4);
 }
@@ -274,6 +293,7 @@ nav {
   padding-top: 0;
   padding-bottom: 94px;
 }
+
 
 /* Employees */
 
@@ -318,7 +338,7 @@ nav {
   text-align: center;
 }
 
-/* --PORTFOLIO-- */
+/* ----------------------PORTFOLIO---------------------- */
 
 .portfolio-section {
   padding-top: 94px;
@@ -332,7 +352,7 @@ nav {
 /* Filter */
 
 .filter-buttons {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter {
@@ -399,8 +419,6 @@ nav {
 }
 
 .portfolio-name {
-  margin-left: 23px;
-  margin-right: 23px;
   margin-bottom: 4px;
 
   color: var(--primary-text-color);
@@ -411,10 +429,6 @@ nav {
 }
 
 .portfolio-type {
-  margin-left: 23px;
-  margin-right: 23px;
-  margin-bottom: 19px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -424,6 +438,9 @@ nav {
 
 .card-border {
   padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 19px;
+  padding-right: 23px;
   margin-top: -4px;
 
   border-bottom: 1px solid var(--portfolio-border-border-coolor);
