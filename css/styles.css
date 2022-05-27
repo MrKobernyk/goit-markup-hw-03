@@ -56,11 +56,11 @@ body {
   margin-right: 93px;
 
   color: #2196f3;
-  font-family: 'raleway';
+  font-family: 'raleway', sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
 }
 
 .logo-studio-header {
@@ -221,7 +221,7 @@ nav {
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
   letter-spacing: 0.06em;
 
   cursor: pointer;
@@ -253,7 +253,7 @@ nav {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -349,7 +349,7 @@ nav {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   border-radius: 4px;
 
@@ -380,9 +380,9 @@ nav {
 
 .portfolio > li {
   /* border: 1px solid #eeeeee; */
-  width: calc((100% - 54px) / 3);
-  margin-right: 27px;
-  margin-bottom: 27px;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio > li:nth-child(3n) {
@@ -399,8 +399,8 @@ nav {
 }
 
 .portfolio-name {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 23px;
+  margin-right: 23px;
   margin-bottom: 4px;
 
   color: var(--primary-text-color);
@@ -411,13 +411,13 @@ nav {
 }
 
 .portfolio-type {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 23px;
+  margin-right: 23px;
   margin-bottom: 20px;
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -425,7 +425,7 @@ nav {
 .card-border {
   padding-top: 24px;
   margin-top: -4px;
-  
+
   border-bottom: 1px solid var(--portfolio-border-border-coolor);
   border-left: 1px solid var(--portfolio-border-border-coolor);
   border-right: 1px solid var(--portfolio-border-border-coolor);
