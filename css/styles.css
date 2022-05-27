@@ -413,7 +413,7 @@ nav {
 .portfolio-type {
   margin-left: 23px;
   margin-right: 23px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   font-weight: 400;
   font-size: 16px;
@@ -423,7 +423,7 @@ nav {
 }
 
 .card-border {
-  padding-top: 24px;
+  padding-top: 20px;
   margin-top: -4px;
 
   border-bottom: 1px solid var(--portfolio-border-border-coolor);
