@@ -41,12 +41,22 @@ body {
   padding: 0 15px;
 }
 
-.employees-list img,
-.what-we-do-list img {
-  display: block;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-/* ----------------------Logo---------------------- */
+
+/* =============================== Logo =============================== */
+
 
 .logo-web {
   margin-right: 93px;
@@ -67,7 +77,9 @@ body {
   color: #ffffff;
 }
 
-/* ----------------------Header---------------------- */
+
+/* =============================== Header =============================== */
+
 
 .header {
   padding-top: 24px;
@@ -147,7 +159,9 @@ nav {
   color: var(--primary-text-color);
 }
 
-/* ----------------------Footer---------------------- */
+
+/* =============================== Footer ===============================  */
+
 
 .footer {
   padding-top: 60px;
@@ -185,6 +199,10 @@ nav {
 .adress .adress-contact:hover,
 .adress .adress-contact:focus {
   color: var(--accent-color);
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
 }
 
 .adress .adress-contact {
@@ -193,12 +211,18 @@ nav {
 }
 
 
-/* ----------------------INDEX---------------------- */
+/* =============================== INDEX ===============================  */
+
 
 .advantages-list,
 .what-we-do-list,
 .employees-list {
   display: flex;
+}
+
+.employees-list img,
+.what-we-do-list img {
+  display: block;
 }
 
 .advantages-list > li:not(:last-child),
@@ -299,7 +323,6 @@ nav {
   padding-bottom: 94px;
 }
 
-
 /* Employees */
 
 .employees {
@@ -343,7 +366,9 @@ nav {
   text-align: center;
 }
 
-/* ----------------------PORTFOLIO---------------------- */
+
+/* =============================== PORTFOLIO ===============================  */
+
 
 .portfolio-section {
   padding-top: 94px;
@@ -403,8 +428,11 @@ nav {
   flex-wrap: wrap;
 }
 
+.portfolio img {
+  display: block;
+}
+
 .portfolio > li {
-  /* border: 1px solid #eeeeee; */
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -446,9 +474,9 @@ nav {
   padding-left: 23px;
   padding-bottom: 19px;
   padding-right: 23px;
-  margin-top: -4px;
 
   border-bottom: 1px solid var(--portfolio-border-border-coolor);
   border-left: 1px solid var(--portfolio-border-border-coolor);
   border-right: 1px solid var(--portfolio-border-border-coolor);
 }
+
